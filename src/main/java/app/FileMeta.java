@@ -1,5 +1,6 @@
 package app;
 
+<<<<<<< HEAD
 import util.PinyinUtil;
 import util.Util;
 
@@ -138,4 +139,7 @@ public class FileMeta {
     public void setDirectory(Boolean directory) {
         isDirectory = directory;
     }
+=======
+public class FileMeta {
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
 }

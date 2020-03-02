@@ -12,12 +12,19 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Window;
+<<<<<<< HEAD
 import task.*;
 
 import java.io.File;
 import java.net.URL;
 import java.util.Collection;
 import java.util.List;
+=======
+import task.DBInit;
+
+import java.io.File;
+import java.net.URL;
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -34,8 +41,11 @@ public class Controller implements Initializable {
     @FXML
     private Label srcDirectory;
 
+<<<<<<< HEAD
     private Thread task;
 
+=======
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
     public void initialize(URL location, ResourceBundle resources) {
         //界面初始化时，需要初始化数据库及表
         // 添加搜索框监听器，内容改变时执行监听事件
@@ -47,7 +57,11 @@ public class Controller implements Initializable {
             }
         });
     }
+<<<<<<< HEAD
     //点击选择“目录”按钮显示
+=======
+
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
     public void choose(Event event) {
         // 选择文件目录
         DirectoryChooser directoryChooser=new DirectoryChooser();
@@ -58,6 +72,7 @@ public class Controller implements Initializable {
         // 获取选择的目录路径，并显示
         String path = file.getPath();
         // TODO
+<<<<<<< HEAD
         srcDirectory.setText(path);
         if(task!=null){
             task.interrupt();//初始状态(中止状态)也会中断
@@ -84,12 +99,15 @@ public class Controller implements Initializable {
             }
         });
         task.start();
+=======
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
     }
 
     // 刷新表格数据
     private void freshTable(){
         ObservableList<FileMeta> metas = fileTable.getItems();
         metas.clear();
+<<<<<<< HEAD
         // 如果选择了某个目录，代表需要再根据搜索框的内容
         String dir=srcDirectory.getText();
         if(dir!=null&&dir.trim().length()!=0){
@@ -103,5 +121,8 @@ public class Controller implements Initializable {
         }
         //--->方法返回后，javafx表单做什么？
         //通过反射获取fileMeta类型中的属性(app.fxml文件中定义的属性)
+=======
+        // TODO
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
     }
 }

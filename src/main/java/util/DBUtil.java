@@ -22,8 +22,12 @@ public class DBUtil {
                     //初始化操作
                     SQLiteConfig config=new SQLiteConfig();
                     config.setDateStringFormat(Util.DATE_PATTERN);
+<<<<<<< HEAD
                     //TODO 加入config手动设置
                     DATA_SOURCE=new SQLiteDataSource(config);
+=======
+                    DATA_SOURCE=new SQLiteDataSource();
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
                     ((SQLiteDataSource)DATA_SOURCE).setUrl(getUrl());
                 }
             }

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+<<<<<<< HEAD
       <profile default="true" name="Default" enabled="true" />
+=======
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="everyting-like" />
+=======
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
         <module name="1" />
       </profile>
     </annotationProcessing>

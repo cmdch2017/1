@@ -1,5 +1,6 @@
 package util;
 
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -26,4 +27,8 @@ public class Util {
         System.out.println(parseSize(1023+1024));
         System.out.println(parseSize(10000));
     }
+=======
+public class Util {
+    public static final String DATE_PATTERN="yyyy-MM-dd";
+>>>>>>> c9db452291d2eb63072f2c5e2f6ac1de5ebf7d73
 }
